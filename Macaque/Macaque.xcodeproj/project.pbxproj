@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6126081297A92300E9AFBC4E /* Pods_Macaque.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC52324E4E2CB2380A11EA79 /* Pods_Macaque.framework */; platformFilter = ios; };
+		CD41FAB5238E775700647083 /* CVImageBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41FAB4238E775700647083 /* CVImageBuffer.swift */; };
+		CD41FAB7238E94DB00647083 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41FAB6238E94DB00647083 /* CALayer.swift */; };
+		CD41FABC238EB36B00647083 /* BoundingBoxLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41FABB238EB36B00647083 /* BoundingBoxLayer.swift */; };
+		CDAD7A11237EA27700C08E3B /* Macaque.h in Headers */ = {isa = PBXBuildFile; fileRef = CDAD7A0F237EA27700C08E3B /* Macaque.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDB4DF23238FEB59004E725A /* VideoBGRAStreamDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4DF1D238FEB59004E725A /* VideoBGRAStreamDataProvider.swift */; };
+		CDB4DF24238FEB59004E725A /* UIImageToRGBDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4DF1E238FEB59004E725A /* UIImageToRGBDataProvider.swift */; };
+		CDB4DF25238FEB59004E725A /* InputDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4DF1F238FEB59004E725A /* InputDataProvider.swift */; };
+		CDB4DF26238FEB59004E725A /* OutputDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4DF21238FEB59004E725A /* OutputDataProvider.swift */; };
+		CDB4DF27238FEB59004E725A /* Detection4OutputsBoundingBoxesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4DF22238FEB59004E725A /* Detection4OutputsBoundingBoxesDataProvider.swift */; };
+		CDB4DF29238FEBDD004E725A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4DF28238FEBDD004E725A /* String.swift */; };
+		CDB4DF2F238FEFBC004E725A /* DataProviderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4DF2E238FEFBC004E725A /* DataProviderError.swift */; };
+		CDC51D47239FBD5100ED918B /* Macaque.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC51D46239FBD5100ED918B /* Macaque.swift */; };
+		CDC51D49239FBD7E00ED918B /* TensorflowLitePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC51D48239FBD7E00ED918B /* TensorflowLitePredictor.swift */; };
+		CDC51D4B239FC08100ED918B /* Predictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC51D4A239FC08100ED918B /* Predictor.swift */; };
+		CDE4991B238D5A4C006CE726 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE4991A238D5A4C006CE726 /* Image.swift */; };
+		CDE49928238D5A72006CE726 /* DetectionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE49927238D5A72006CE726 /* DetectionResult.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B928AC3773CE760B06CCBC46 /* Pods-Macaque.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaque.release.xcconfig"; path = "Target Support Files/Pods-Macaque/Pods-Macaque.release.xcconfig"; sourceTree = "<group>"; };
+		CD41FAB4238E775700647083 /* CVImageBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVImageBuffer.swift; sourceTree = "<group>"; };
+		CD41FAB6238E94DB00647083 /* CALayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
+		CD41FABB238EB36B00647083 /* BoundingBoxLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoundingBoxLayer.swift; sourceTree = "<group>"; };
+		CDAD7A0C237EA27700C08E3B /* Macaque.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Macaque.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDAD7A0F237EA27700C08E3B /* Macaque.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macaque.h; sourceTree = "<group>"; };
+		CDAD7A10237EA27700C08E3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDB4DF1D238FEB59004E725A /* VideoBGRAStreamDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoBGRAStreamDataProvider.swift; sourceTree = "<group>"; };
+		CDB4DF1E238FEB59004E725A /* UIImageToRGBDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageToRGBDataProvider.swift; sourceTree = "<group>"; };
+		CDB4DF1F238FEB59004E725A /* InputDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputDataProvider.swift; sourceTree = "<group>"; };
+		CDB4DF21238FEB59004E725A /* OutputDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutputDataProvider.swift; sourceTree = "<group>"; };
+		CDB4DF22238FEB59004E725A /* Detection4OutputsBoundingBoxesDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detection4OutputsBoundingBoxesDataProvider.swift; sourceTree = "<group>"; };
+		CDB4DF28238FEBDD004E725A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		CDB4DF2E238FEFBC004E725A /* DataProviderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderError.swift; sourceTree = "<group>"; };
+		CDC51D46239FBD5100ED918B /* Macaque.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macaque.swift; sourceTree = "<group>"; };
+		CDC51D48239FBD7E00ED918B /* TensorflowLitePredictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TensorflowLitePredictor.swift; sourceTree = "<group>"; };
+		CDC51D4A239FC08100ED918B /* Predictor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictor.swift; sourceTree = "<group>"; };
+		CDE4991A238D5A4C006CE726 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		CDE49927238D5A72006CE726 /* DetectionResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetectionResult.swift; sourceTree = "<group>"; };
+		E94B74081425C1874EBF9A4F /* Pods-Macaque.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaque.debug.xcconfig"; path = "Target Support Files/Pods-Macaque/Pods-Macaque.debug.xcconfig"; sourceTree = "<group>"; };
+		FC52324E4E2CB2380A11EA79 /* Pods_Macaque.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Macaque.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CDAD7A09237EA27700C08E3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6126081297A92300E9AFBC4E /* Pods_Macaque.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		436D4716D1FB914B5CE40F2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E94B74081425C1874EBF9A4F /* Pods-Macaque.debug.xcconfig */,
+				B928AC3773CE760B06CCBC46 /* Pods-Macaque.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5B6038D2CE3AF1FA7C5D7671 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC52324E4E2CB2380A11EA79 /* Pods_Macaque.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD41FABA238EB36B00647083 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CD41FABB238EB36B00647083 /* BoundingBoxLayer.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CDAD7A02237EA27700C08E3B = {
+			isa = PBXGroup;
+			children = (
+				CDAD7A0E237EA27700C08E3B /* Macaque */,
+				CDAD7A0D237EA27700C08E3B /* Products */,
+				436D4716D1FB914B5CE40F2A /* Pods */,
+				5B6038D2CE3AF1FA7C5D7671 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CDAD7A0D237EA27700C08E3B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDAD7A0C237EA27700C08E3B /* Macaque.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDAD7A0E237EA27700C08E3B /* Macaque */ = {
+			isa = PBXGroup;
+			children = (
+				CDB4DF1B238FEB59004E725A /* DataProviders */,
+				CDE49919238D5A4C006CE726 /* Extensions */,
+				CDAD7A10237EA27700C08E3B /* Info.plist */,
+				CDAD7A0F237EA27700C08E3B /* Macaque.h */,
+				CDC51D45239FBD5100ED918B /* Predictors */,
+				CDE49926238D5A72006CE726 /* Results */,
+				CD41FABA238EB36B00647083 /* UI */,
+			);
+			path = Macaque;
+			sourceTree = "<group>";
+		};
+		CDB4DF1B238FEB59004E725A /* DataProviders */ = {
+			isa = PBXGroup;
+			children = (
+				CDB4DF1C238FEB59004E725A /* Input */,
+				CDB4DF20238FEB59004E725A /* Output */,
+				CDB4DF2E238FEFBC004E725A /* DataProviderError.swift */,
+			);
+			path = DataProviders;
+			sourceTree = "<group>";
+		};
+		CDB4DF1C238FEB59004E725A /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				CDB4DF1F238FEB59004E725A /* InputDataProvider.swift */,
+				CDB4DF1E238FEB59004E725A /* UIImageToRGBDataProvider.swift */,
+				CDB4DF1D238FEB59004E725A /* VideoBGRAStreamDataProvider.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		CDB4DF20238FEB59004E725A /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				CDB4DF21238FEB59004E725A /* OutputDataProvider.swift */,
+				CDB4DF22238FEB59004E725A /* Detection4OutputsBoundingBoxesDataProvider.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		CDC51D45239FBD5100ED918B /* Predictors */ = {
+			isa = PBXGroup;
+			children = (
+				CDC51D46239FBD5100ED918B /* Macaque.swift */,
+				CDC51D48239FBD7E00ED918B /* TensorflowLitePredictor.swift */,
+				CDC51D4A239FC08100ED918B /* Predictor.swift */,
+			);
+			path = Predictors;
+			sourceTree = "<group>";
+		};
+		CDE49919238D5A4C006CE726 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CDE4991A238D5A4C006CE726 /* Image.swift */,
+				CD41FAB4238E775700647083 /* CVImageBuffer.swift */,
+				CD41FAB6238E94DB00647083 /* CALayer.swift */,
+				CDB4DF28238FEBDD004E725A /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CDE49926238D5A72006CE726 /* Results */ = {
+			isa = PBXGroup;
+			children = (
+				CDE49927238D5A72006CE726 /* DetectionResult.swift */,
+			);
+			path = Results;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CDAD7A07237EA27700C08E3B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDAD7A11237EA27700C08E3B /* Macaque.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CDAD7A0B237EA27700C08E3B /* Macaque */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CDAD7A14237EA27700C08E3B /* Build configuration list for PBXNativeTarget "Macaque" */;
+			buildPhases = (
+				BB484760943AAE599F210D85 /* [CP] Check Pods Manifest.lock */,
+				CDAD7A07237EA27700C08E3B /* Headers */,
+				CDAD7A08237EA27700C08E3B /* Sources */,
+				CDAD7A09237EA27700C08E3B /* Frameworks */,
+				CDAD7A0A237EA27700C08E3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Macaque;
+			productName = Macaque;
+			productReference = CDAD7A0C237EA27700C08E3B /* Macaque.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CDAD7A03237EA27700C08E3B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Enigma Pattern Sp. z o.o.";
+				TargetAttributes = {
+					CDAD7A0B237EA27700C08E3B = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = CDAD7A06237EA27700C08E3B /* Build configuration list for PBXProject "Macaque" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CDAD7A02237EA27700C08E3B;
+			productRefGroup = CDAD7A0D237EA27700C08E3B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CDAD7A0B237EA27700C08E3B /* Macaque */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CDAD7A0A237EA27700C08E3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB484760943AAE599F210D85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Macaque-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDAD7A08237EA27700C08E3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDE49928238D5A72006CE726 /* DetectionResult.swift in Sources */,
+				CDB4DF29238FEBDD004E725A /* String.swift in Sources */,
+				CDB4DF25238FEB59004E725A /* InputDataProvider.swift in Sources */,
+				CDB4DF26238FEB59004E725A /* OutputDataProvider.swift in Sources */,
+				CDC51D4B239FC08100ED918B /* Predictor.swift in Sources */,
+				CDB4DF27238FEB59004E725A /* Detection4OutputsBoundingBoxesDataProvider.swift in Sources */,
+				CDC51D49239FBD7E00ED918B /* TensorflowLitePredictor.swift in Sources */,
+				CD41FAB5238E775700647083 /* CVImageBuffer.swift in Sources */,
+				CDE4991B238D5A4C006CE726 /* Image.swift in Sources */,
+				CD41FAB7238E94DB00647083 /* CALayer.swift in Sources */,
+				CDC51D47239FBD5100ED918B /* Macaque.swift in Sources */,
+				CDB4DF23238FEB59004E725A /* VideoBGRAStreamDataProvider.swift in Sources */,
+				CDB4DF2F238FEFBC004E725A /* DataProviderError.swift in Sources */,
+				CDB4DF24238FEB59004E725A /* UIImageToRGBDataProvider.swift in Sources */,
+				CD41FABC238EB36B00647083 /* BoundingBoxLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CDAD7A12237EA27700C08E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CDAD7A13237EA27700C08E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CDAD7A15237EA27700C08E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E94B74081425C1874EBF9A4F /* Pods-Macaque.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R9T4URQY5V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Macaque/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.enigmapattern.Macaque;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CDAD7A16237EA27700C08E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B928AC3773CE760B06CCBC46 /* Pods-Macaque.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R9T4URQY5V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Macaque/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.enigmapattern.Macaque;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = NO;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CDAD7A06237EA27700C08E3B /* Build configuration list for PBXProject "Macaque" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDAD7A12237EA27700C08E3B /* Debug */,
+				CDAD7A13237EA27700C08E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CDAD7A14237EA27700C08E3B /* Build configuration list for PBXNativeTarget "Macaque" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CDAD7A15237EA27700C08E3B /* Debug */,
+				CDAD7A16237EA27700C08E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CDAD7A03237EA27700C08E3B /* Project object */;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+<<<<<<< HEAD
+      location = "group:../../Macaque/Macaque.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Macaque/Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MacaquePreview.xcodeproj">
+=======
+      location = "group:MacaquePreview.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Macaque/Macaque.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Macaque/Pods/Pods.xcodeproj">
+>>>>>>> 41ee12a9db4a47470a22eeaae4e9dafabaaaee7b
+   </FileRef>
+</Workspace>
