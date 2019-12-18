@@ -8,7 +8,7 @@ Simple library facilitating integration of Artificial Intelligence models into m
 
 1. [Overview](#overview)
 2. [Design](#design)
-3. [Requrements](#requrements)
+3. [Requirements](#requirements)
 4. [Setup](#setup)
 5. [Features](#fFeatures)
 6. [Usage](#usage)
@@ -45,9 +45,9 @@ The schema below presents the main use case of Macaque
 
 * Detection4OutputsBoundingBoxesDataProvider - converts detection results from 4 model outputs (Locations, Classes, Scores, # of detections) into a list of DetectionResult objects
 
-## Requrements
+## Requirements
 
-Minimum version of iOS supported is 9.0
+Minimum version of iOS supported is 9.0, Swift 5
 
 ## Setup
 
